@@ -1,9 +1,9 @@
-function callFriend(friendsName ="Aizu"){
-    console.log(friendsName);
-    console.log('Pick up the phone');
-    console.log('Type in the number of' + friendsName);
-    console.log('Press call');
-    console.log('Wait for the answer');
+function callFriend(friendsName = "Aizu") {
+  console.log(friendsName);
+  console.log("Pick up the phone");
+  console.log("Type in the number of" + friendsName);
+  console.log("Press call");
+  console.log("Wait for the answer");
 }
 
 // callFriend("Aizu");
@@ -11,8 +11,8 @@ function callFriend(friendsName ="Aizu"){
 // callFriend("Eliza");
 // callFriend();
 
-function calculareSquareArea(a,b) {
-    console.log(a * b);
+function calculareSquareArea(a, b) {
+  console.log(a * b);
 }
 
 // calculareSquareArea(5, 100000);
@@ -20,13 +20,13 @@ function calculareSquareArea(a,b) {
 // calculareSquareArea(1, 0);
 
 function calculteCylinderVolume(r, h) {
-    return 3.14 * r * r * h;
+  return 3.14 * r * r * h;
 }
 var volume = calculteCylinderVolume(3, 4);
 // console.log(volume);
 
-var smallGlassVol = calculteCylinderVolume(3,4);
-var bottleVol = calculteCylinderVolume (3, 10);
+var smallGlassVol = calculteCylinderVolume(3, 4);
+var bottleVol = calculteCylinderVolume(3, 10);
 
 // console.log(smallGlassVol);
 // console.log(bottleVol);
@@ -35,18 +35,18 @@ var bottleVol = calculteCylinderVolume (3, 10);
 // document.write("<p>Goodbye world</p>");
 
 function countdown(number) {
-    for (let i = number; i > 0; i--){
-       document.write(i + "<br>");
-    }
+  for (let i = number; i > 0; i--) {
+    document.write(i + "<br>");
+  }
 }
 
 // countdown(5);
 // countdown(10);
 
 function countdown(number) {
-    for (let i = number; i > 0; i--){
-       document.write(i + "");
-    }
+  for (let i = number; i > 0; i--) {
+    document.write(i + "");
+  }
 }
 
 // countdown(5);
@@ -58,15 +58,15 @@ function countdown(number) {
 // document.write(number)
 
 function randomColor() {
-    var red = Math.random() * 225;
-    var blue = Math.random() * 225;
-    var green =Math.random() * 225;
+  var red = Math.random() * 225;
+  var blue = Math.random() * 225;
+  var green = Math.random() * 225;
 
-    return 'rgb('+ red +',' + green + ',' + blue +')'
+  return "rgb(" + red + "," + green + "," + blue + ")";
 }
 
 function colorfulText(text, color) {
-    document.write('<h1 style="color:' + color + ';">' + text + '</h1>');
+  document.write('<h1 style="color:' + color + ';">' + text + "</h1>");
 }
 
 var color = randomColor();
