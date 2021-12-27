@@ -31,6 +31,9 @@ var bottleVol = calculteCylinderVolume (3, 10);
 // console.log(smallGlassVol);
 // console.log(bottleVol);
 
-document.write("Hello!");
-document.write("World!")
-document.writeln
+// document.write("<h1>Hello world</h1>!");
+// document.write("<p>Goodbye world</p>");
+
+function countdown() {
+    
+}
