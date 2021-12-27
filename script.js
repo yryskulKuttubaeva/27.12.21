@@ -34,6 +34,41 @@ var bottleVol = calculteCylinderVolume (3, 10);
 // document.write("<h1>Hello world</h1>!");
 // document.write("<p>Goodbye world</p>");
 
-function countdown() {
-    
+function countdown(number) {
+    for (let i = number; i > 0; i--){
+       document.write(i + "<br>");
+    }
 }
+
+// countdown(5);
+// countdown(10);
+
+function countdown(number) {
+    for (let i = number; i > 0; i--){
+       document.write(i + "");
+    }
+}
+
+// countdown(5);
+// countdown(10);
+
+// countdown(prompt("Enter the number" , 100))
+
+// var number = Math.random();
+// document.write(number)
+
+function randomColor() {
+    var red = Math.random() * 225;
+    var blue = Math.random() * 225;
+    var green =Math.random() * 225;
+
+    return 'rgb('+ red +',' + green + ',' + blue +')'
+}
+
+function colorfulText(text, color) {
+    document.write('<h1 style="color:' + color + ';">' + text + '</h1>');
+}
+
+var color = randomColor();
+colorfulText("Hello world!", color);
+colorfulText("Bye world!", color);
